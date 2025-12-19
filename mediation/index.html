@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마음의 평안 - 명상</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="meditation-container">
+        <!-- 메인 이미지 컨테이너 -->
+        <div class="image-container" id="imageContainer">
+            <img id="meditationImage" src="" alt="명상 이미지" class="meditation-image">
+            
+            <!-- 좋아요 버튼 -->
+            <button class="like-btn" id="likeBtn">
+                ❤️
+            </button>
+            
+            <!-- 타이머 표시 -->
+            <div class="timer" id="timer">03:00</div>
+        </div>
+        
+        <!-- 명언 표시 컨테이너 -->
+        <div class="quote-container" id="quoteContainer" style="display: none;">
+            <div class="quote">
+                <blockquote id="quoteText">
+                    "마음이 평안할 때, 세상은 아름답다."
+                </blockquote>
+                <cite id="quoteAuthor">- 불교 명언</cite>
+            </div>
+        </div>
+        
+        <!-- 배경 음악 -->
+        <audio id="backgroundMusic" loop preload="none">
+            <source src="assets/meditation-music.mp3" type="audio/mpeg">
+            <source src="assets/meditation-music.wav" type="audio/wav">
+        </audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
